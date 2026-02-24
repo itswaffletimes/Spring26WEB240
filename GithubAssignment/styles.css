@@ -1,0 +1,258 @@
+/* ===== GENERAL ===== */
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+}
+
+h1, h2 {
+    text-align: center;
+}
+
+section {
+    padding: 60px 20px;
+}
+
+/* ===== NAVIGATION BAR ===== */
+.navbar {
+    background: linear-gradient(to right, #ffcc00, #ff6600);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 50px;
+}
+
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 30px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.nav-links a:hover {
+    color: #008000;
+}
+
+/* ===== IMAGE SLIDER ===== */
+.slider {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    position: relative;
+}
+
+.slides {
+    display: flex;
+    width: 300%;
+    animation: slide 12s infinite;
+}
+
+.slides img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+}
+
+/* Animation */
+@keyframes slide {
+    0% { margin-left: 0; }
+    33% { margin-left: 0; }
+    38% { margin-left: -100%; }
+    66% { margin-left: -100%; }
+    71% { margin-left: -200%; }
+    100% { margin-left: -200%; }
+}
+
+/* ===== ABOUT SECTION ===== */
+.about {
+    background-color: #f9fff0;
+}
+
+.about h2 {
+    color: #ff6600;
+}
+
+.about p {
+    max-width: 900px;
+    margin: 20px auto;
+    font-size: 18px;
+    text-align: center;
+}
+
+.selection-title {
+    text-align: center;
+    color: #008000;
+    margin-top: 40px;
+}
+
+.about ul {
+    max-width: 700px;
+    margin: 30px auto;
+    list-style: none;
+    padding: 0;
+}
+
+.about li {
+    background-color: #ffcc00;
+    margin-bottom: 15px;
+    padding: 15px;
+    border-left: 8px solid #008000;
+    font-size: 18px;
+}
+
+/* ===== NEWSLETTER SECTION ===== */
+
+.newsletter {
+    background: linear-gradient(to right, #ffcc00, #ff6600);
+    padding: 70px 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.newsletter-box {
+    background-color: white;
+    width: 90%;
+    max-width: 800px;
+    padding: 40px;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+}
+
+.newsletter-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.newsletter-logo {
+    height: 60px;
+    width: auto;
+}
+
+.newsletter-header h2 {
+    color: #008000;
+    font-size: 22px;
+}
+
+.newsletter-text {
+    margin-bottom: 25px;
+    font-size: 16px;
+}
+
+.newsletter-form {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.newsletter-form input {
+    padding: 12px;
+    width: 250px;
+    border: 2px solid #008000;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.newsletter-form button {
+    padding: 12px 25px;
+    background-color: #008000;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.newsletter-form button:hover {
+    background-color: #ff6600;
+}
+
+/* ===== FOOTER ===== */
+
+.footer {
+    background-color: #008000;
+    color: white;
+    padding: 40px 60px;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer-section {
+    width: 30%;
+}
+
+.footer-section h3 {
+    color: #ffcc00;
+    margin-bottom: 15px;
+    font-size: 18px;
+}
+
+.footer-section p {
+    margin: 8px 0;
+    font-size: 15px;
+}
+
+.footer-section a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.footer-section a:hover {
+    color: #ffcc00;
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 30px;
+    padding-top: 15px;
+    border-top: 1px solid rgba(255,255,255,0.3);
+    font-size: 14px;
+}
+
+/* ===== SIMPLE PAGE CONTENT ===== */
+
+.page-content {
+    padding: 100px 20px;
+    text-align: center;
+    background: linear-gradient(to right, #ffcc00, #ff6600);
+    color: white;
+}
+
+.page-content h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.page-content p {
+    font-size: 18px;
+    max-width: 700px;
+    margin: auto;
+}
